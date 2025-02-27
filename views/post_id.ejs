@@ -1,0 +1,17 @@
+<%- include("header"); %>
+
+<div class="post_card">
+    <div class="title">
+        <h1><%= posts[id].title %></h1>
+    </div>
+    <div class="description">
+    <p>
+        <%= posts[id].Description %>
+    </p>    
+    </div>
+    <div class="author">
+       <i>@<%= posts[id].author  %></i> 
+    </div>
+</div>
+
+<%- include("footer"); %>

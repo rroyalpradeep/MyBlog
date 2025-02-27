@@ -1,0 +1,33 @@
+<%- include("header.ejs"); %>
+
+<main class="blog-posts">
+    <article class="card">
+        <a href="http://localhost:8080/posts" class="read-more">Read</a>
+        <a href="http://localhost:8080/admin/new" class="read-more">Create</a>
+    </article>
+</main>
+
+<main class="blog-posts">
+    <% for(let i of posts) { %>
+    <article class="card">
+        <div class="title">
+            <h2><%= i.title %></h2>
+        </div>
+        <div class="home_description">
+            <p id="text"><%= i.Description %> </p>
+        </div>
+        <% let idx =  posts.indexOf(i) %>
+        <a href="http://localhost:8080/posts/<%= idx %>" method = "patch" class="read-more">Read more</a>
+        <i>  By @<%= i.author %></i>
+        <div class="AdminBtn">
+        <a href="http://localhost:8080/admin/<%= idx %>/edit" class="read-more">Update</a> 
+        <form action="/admin/<%= idx %>/delete?_method=delete" method="post">
+            <input type="submit" value="Delete" class="sumbitBtn">
+        </form>
+    </div>
+    </article>
+    <% } %>
+</main>
+
+
+<%- include("footer"); %>

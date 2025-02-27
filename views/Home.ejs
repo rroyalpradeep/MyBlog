@@ -1,0 +1,23 @@
+    <%- include("header.ejs"); %>
+    <header class="hero">
+        <h1>Welcome to MyBlog</h1>
+        <p>Your daily dose of inspiration and knowledge</p>
+    </header>
+
+    <main class="blog-posts">
+        <% for(let i of posts) { %>
+        <article class="card">
+            <div class="title">
+                <h2><%= i.title %></h2>
+            </div>
+            <div class="home_description">
+                <p id="text"> <%= i.Description %> </p>
+            </div>
+            <% let idx =  posts.indexOf(i) %>
+            <a href="http://localhost:8080/posts/<%= idx %>" class="read-more">Read more</a>
+            <i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; By @<%= i.author %></i>
+        </article>
+        <% } %>
+    </main>
+    <%- include("footer.ejs") %>
+</html>
