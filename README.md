@@ -25,18 +25,11 @@ A dynamic and responsive **Blog Web Application** built using **React.js**, **Ex
 
 ## 📸 Screenshots
 
-![MyBlog Homepage](Images/Screenshot 2025-07-06 000644.png)
-
-![Admin Panel](Images/Screenshot 2025-07-06 000722.png)
-
-![About Me](Images/Screenshot 2025-07-06 000838.png)
-
-![Skillls Set](Images/Screenshot 2025-07-06 000855.png)
-
-![Contact Us](Images/Screenshot 2025-07-06 000904.png)
-
-
-
+![MyBlog Homepage](Images/homepage.png)
+![Admin Panel](Images/admin_panel.png)
+![About Me](Images/about_me.png)
+![Skills Set](Images/skills_set.png)
+![Contact Us](Images/contact_us.png)
 
 
 ## 📂 Folder Structure
