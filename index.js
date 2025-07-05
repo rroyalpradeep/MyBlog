@@ -5,7 +5,7 @@ const nodemailer = require("nodemailer");
 
 let port = 8080;
 var methodOverride = require('method-override');
-app.use(methodOverride('_method'));0
+app.use(methodOverride('_method'));
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
